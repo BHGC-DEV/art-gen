@@ -4,6 +4,9 @@ const sentencer = require('sentencer');
 const mNames = require( '@stdlib/datasets-male-first-names-en' );
 const fNames = require( '@stdlib/datasets-female-first-names-en' );
 
+const {
+    baseUri,
+} = require(`${basePath}/src/config.js`);
 
 let Gender =() => {
     let random = Math.floor(Math.random() * 100)
@@ -66,6 +69,7 @@ let GenerateDescription = (gender, name) => {
         let description = GenerateDescription(g, name);
         item.name = name;
         item.description = description;
+        item.image = `${baseUri}/${item.edition}.png`;
 
 
 
