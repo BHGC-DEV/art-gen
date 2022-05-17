@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "node index.js",
-    "update_info": "node utils/update_info.js",
+    "regen": "node utils/regenerate_story.js",
     "update_descriptions": "node utils/update_descriptions.js"
   },
   "author": "Jesse Hall (codeSTACKr)",

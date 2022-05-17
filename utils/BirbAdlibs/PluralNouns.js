@@ -1,7 +1,6 @@
 const PluralNouns = [
     "aardvarks",
     "airs",
-    "airplanes",
     "airports",
     "alarms",
     "alligators",

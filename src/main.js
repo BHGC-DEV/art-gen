@@ -8,7 +8,6 @@ const layersDir = `${basePath}/layers`;
 const {
   format,
   baseUri,
-  description,
   background,
   uniqueDnaTorrance,
   layerConfigurations,
@@ -21,6 +20,13 @@ const {
   network,
   gif,
 } = require(`${basePath}/src/config.js`);
+
+const {
+  GenerateGender,
+  GenerateName,
+  GenerateDescription,
+  UpdateAttributes
+} = require(`${basePath}/utils/description_gen.js`);
 const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
 ctx.imageSmoothingEnabled = format.smoothing;
@@ -126,9 +132,12 @@ const drawBackground = () => {
 
 const addMetadata = (_dna, _edition) => {
   let dateTime = Date.now();
-  metadataList.push({
-    name: `${namePrefix} #${_edition}`,
-    description: description,
+  let g = GenerateGender();
+  let name = GenerateName(g);
+
+  let info = {
+    name: name,
+    description: "",
     image: `${baseUri}/${_edition}.png`,
     attributes: attributesList,
     dna: sha1(_dna),
@@ -136,7 +145,9 @@ const addMetadata = (_dna, _edition) => {
     ...extraMetadata,
     date: dateTime,
     compiler: "HashLips Art Engine - BHGC Modified",
-  });
+  }
+  info.description = GenerateDescription(info, g, name);
+  metadataList.push(info);
   attributesList = [];
 };
 

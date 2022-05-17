@@ -2000,6 +2000,7 @@ const HatNames = [
     "Sister",
     "Thomas",
     "Markov",
+    "Satoshi"
 ];
 
 module.exports = {

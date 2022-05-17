@@ -45,7 +45,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "https://BHGC.no", // Replace with your website or remove this line if you do not have one.
+  // external_url: "https://BHGC.no", // Replace with your website or remove this line if you do not have one.
 };
 
 const gif = {

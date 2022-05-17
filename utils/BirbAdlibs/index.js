@@ -5,7 +5,6 @@ const {CommonAdjectives} = require(`${basePath}/utils/BirbAdlibs/CommonAdjective
 const {EatingVerbs} = require(`${basePath}/utils/BirbAdlibs/EatingVerbs.js`);
 const {FemaleNames} = require(`${basePath}/utils/BirbAdlibs/FemaleNames.js`);
 const {Foods} = require(`${basePath}/utils/BirbAdlibs/Foods.js`);
-const {Genders} = require(`${basePath}/utils/BirbAdlibs/Genders.js`);
 const {GoodVerbs} = require(`${basePath}/utils/BirbAdlibs/GoodVerbs.js`);
 const {HatNames} = require(`${basePath}/utils/BirbAdlibs/HatNames.js`);
 const {HatProperties} = require(`${basePath}/utils/BirbAdlibs/HatProperties.js`);
@@ -15,10 +14,13 @@ const {NightThings} = require(`${basePath}/utils/BirbAdlibs/NightThings.js`);
 const {NZPlaces} = require(`${basePath}/utils/BirbAdlibs/NZPlaces.js`);
 const {PejorativeVerbs} = require(`${basePath}/utils/BirbAdlibs/PejorativeVerbs.js`);
 const {PluralNouns} = require(`${basePath}/utils/BirbAdlibs/PluralNouns.js`);
-const {SingularPronouns} = require(`${basePath}/utils/BirbAdlibs/Pronouns.js`);
-const {PossessivePronouns} = require(`${basePath}/utils/BirbAdlibs/Pronouns.js`);
+const {Genders,
+    SingularPronouns,
+    ObjectivePronouns,
+    PossessivePronouns} = require(`${basePath}/utils/BirbAdlibs/Pronouns.js`);
 const {Secrets} = require(`${basePath}/utils/BirbAdlibs/Secrets.js`);
 const {ZodiacSigns} = require(`${basePath}/utils/BirbAdlibs/ZodiacSigns.js`);
+const {Nicknames} = require(`${basePath}/utils/BirbAdlibs/Nicknames.js`);
 
 module.exports = {
     BloodTypes,
@@ -37,7 +39,9 @@ module.exports = {
     PejorativeVerbs,
     PluralNouns,
     SingularPronouns,
+    ObjectivePronouns,
     PossessivePronouns,
     Secrets,
-    ZodiacSigns
+    ZodiacSigns,
+    Nicknames
 }

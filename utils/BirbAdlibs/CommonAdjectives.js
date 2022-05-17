@@ -1,7 +1,6 @@
 const CommonAdjectives = [
     "abandoned",
     "able",
-    "absolute",
     "adorable",
     "adventurous",
     "academic",

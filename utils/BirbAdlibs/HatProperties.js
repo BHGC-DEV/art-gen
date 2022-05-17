@@ -1,7 +1,6 @@
 const HatProperties = [
     "it can never remove",
     "is cursed",
-    "is blessed",
     "once belonged to a God",
     "belonged to its grandmother",
     "belonged to an ancient spirit",
@@ -95,7 +94,7 @@ const HatProperties = [
     "enhances enhancements",
     "enhances eyes",
     "enchants the beholder",
-    "enhants onlookers",
+    "enchants onlookers",
     "enchants other birds",
     "gives the wearer the ability to have abilities",
     "grants a boon",
@@ -134,7 +133,7 @@ const HatProperties = [
     "is cool",
     "is mint",
     "is a different colour from the colour it appears to be",
-    "is a credit to its maker",
+    "is a credit to its maker"
 ];
 
 module.exports = {
