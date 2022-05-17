@@ -137,7 +137,7 @@ let GenerateDescription = (item, gender, name) => {
         "This bird's full name is {{name}} {{ initial }}. {{ hatName }}, but {{his}} best friends call {{him}} by {{his}} {{ commonAdjective }} nickname, {{ nickname }}. " +
         "{{He}} is the most {{ commonAdjective }} bird in {{habitat}}. \n\n" +
         "{{name}} loves to eat {{ food }}, although {{he}} will {{ eatingVerb }} nearly anything that it considers sufficiently {{ commonAdjective }}. \n\n" +
-        "{{name}} is a {{zodiac}} with a blood type of {{bloodtype}}, who {{ goodVerb }} {{ pluralNoun }} and {{ pluralNoun }}." +
+        "{{name}}’s star sign is {{zodiac}}, and {{his}} blood type is {{bloodtype}}. This bird {{ goodVerb }} {{ pluralNoun }} and {{ pluralNoun }}." +
         " However, {{name}} {{ pejorativeVerb }} {{ pluralNoun }}. By day, {{name}} works as a simple {{job}}." +
         " By night, {{he}} enjoys {{ nightThing }}. \n\n" +
         "{{name}}’s secret is that {{he}} {{ secret }}. {{He}} has a hat that {{ hatProperty }}. The hat’s name is {{ hatName }}."
